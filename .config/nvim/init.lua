@@ -1,0 +1,12 @@
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+
+require "user.colorscheme"
+require "user.cmp"
+require "user.lspconfig"
+require "user.telescope"
+require "user.toggleterm"
+require "user.nvim-tree"
+require "user.feline"
+require "user.vgit"
