@@ -1,0 +1,32 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 120
+UseTab: Never
+Language: Cpp
+Standard: Cpp11
+ContinuationIndentWidth: 4
+AccessModifierOffset: -4
+BinPackParameters: false
+SortIncludes: false
+AlignConsecutiveMacros:       AcrossEmptyLinesAndComments
+AlignConsecutiveAssignments:  AcrossEmptyLinesAndComments
+AlignConsecutiveBitFields:    AcrossEmptyLinesAndComments
+AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Never
+  AfterEnum:            true
+  AfterFunction:        true
+  AfterNamespace:       true
+  AfterObjCDeclaration: true
+  AfterStruct:          true
+  AfterUnion:           true
+  AfterExternBlock:     true
+  BeforeCatch:          true
+  BeforeElse:           true
+  BeforeLambdaBody:     false
+  BeforeWhile:          false
+  IndentBraces:         true
+  SplitEmptyFunction:   true
+  SplitEmptyRecord:     true
+  SplitEmptyNamespace:  true

@@ -1,0 +1,51 @@
+Checks: >
+    '-*,
+    bugprone-*,
+    -bugprone-easily-swappable-parameters,
+    cert*,
+    cppcoreguidelines-*,
+    -cppcoreguidelines-macro-usage,
+    -cppcoreguidelines-pro-type-reinterpret-cast,
+    -cppcoreguidelines-pro-type-union-access,
+    -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+    -cppcoreguidelines-pro-type-vararg,
+    -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+    -cppcoreguidelines-avoid-magic-numbers,
+    readability-*,
+    -readability-redundant-access-specifiers,
+    -readability-named-parameter,
+    -readability-identifier-length,
+    -readability-magic-numbers,
+    google-readability
+    -google-build-using-namespace,
+    -google-explicit-constructor,
+    -google-readability-braces-around-statements,
+    -google-global-names-in-headers,
+    -google-readability-casting,
+    -google-runtime-int,
+    -google-runtime-operator,
+    hicpp-*,
+    -hicpp-vararg,
+    -hicpp-named-parameter,
+    -hicpp-braces-around-statements,
+    misc-*,
+    modernize-*,
+    -modernize-use-trailing-return-type,
+    performance-*,
+    clang-analyzer-*
+
+CheckOptions:
+    - key: bugprone-argument-comment.StrictMode
+      value: 1
+    - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+      value: 1
+    - key: readability-implicit-bool-conversion.AllowPointerConditions
+      value: 1
+    - key: readability-braces-around-statements.ShortStatementLines
+      value: 2
+    - key: readability-function-cognitive-complexity.Threshold
+      value: 50
+
+HeaderFilterRegex: '.*(generated\/protobuf).*'
+FormatStyle: 'file'
+

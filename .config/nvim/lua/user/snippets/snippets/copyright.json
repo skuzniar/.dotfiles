@@ -1,0 +1,13 @@
+{
+  "Copyright": {
+    "prefix": "copr" ,
+    "description": "Copyright Notice",
+    "body": [
+        "/*",
+        " Copyright (c) ${CURRENT_YEAR}, Slawomir Kuzniar.",
+        " Distributed under the MIT License (http://opensource.org/licenses/MIT).",
+        "*/",
+        ""
+    ]
+  }
+}
