@@ -13,6 +13,7 @@ AlignConsecutiveAssignments:  AcrossEmptyLinesAndComments
 AlignConsecutiveBitFields:    AcrossEmptyLinesAndComments
 AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments
 AllowShortFunctionsOnASingleLine: None
+FixNamespaceComments: true
 #BreakBeforeBraces: Custom
 #BraceWrapping:
 #  AfterControlStatement: Never

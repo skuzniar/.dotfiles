@@ -70,3 +70,7 @@ keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Spellcheck
+keymap("n", "<leader>sp", ":set spell!<cr>", opts)
+
