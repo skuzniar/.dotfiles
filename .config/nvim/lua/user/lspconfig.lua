@@ -78,7 +78,7 @@ local setup = function()
 
     local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
     if status_ok then
-        capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+        capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
     end
 
     -- Configure desired language servers

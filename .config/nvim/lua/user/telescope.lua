@@ -4,6 +4,12 @@ local actions = require "telescope.actions"
 
 telescope.setup {
     defaults = {
+        file_ignore_patterns = {
+            "/%.cache/",
+            "/%.cargo/",
+            "/%.d/",
+            "/compile_commands.json/",
+        },
 
         prompt_prefix = " ",
         selection_caret = " ",
