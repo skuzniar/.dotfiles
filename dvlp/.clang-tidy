@@ -11,6 +11,8 @@ Checks: >
     -cppcoreguidelines-pro-type-vararg,
     -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
     -cppcoreguidelines-avoid-magic-numbers,
+    -cppcoreguidelines-avoid-do-while,
+    -cppcoreguidelines-avoid-c-arrays,
     readability-*,
     -readability-redundant-access-specifiers,
     -readability-named-parameter,
@@ -28,9 +30,11 @@ Checks: >
     -hicpp-vararg,
     -hicpp-named-parameter,
     -hicpp-braces-around-statements,
+    -hicpp-avoid-c-arrays,
     misc-*,
     modernize-*,
     -modernize-use-trailing-return-type,
+    -modernize-avoid-c-arrays,
     performance-*,
     clang-analyzer-*
 

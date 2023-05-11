@@ -15,6 +15,14 @@ require('vgit').setup({
     ['n <leader>gd'] = 'project_diff_preview',
     ['n <leader>gq'] = 'project_hunks_qf',
     ['n <leader>gx'] = 'toggle_diff_preference',
+    },
+  settings = {
+    scene = {
+      diff_preference = 'unified', -- unified or split
+      keymaps = {
+        quit = 'q'
+      }
     }
+  }
 })
   
