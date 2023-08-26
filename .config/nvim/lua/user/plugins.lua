@@ -92,13 +92,14 @@ return packer.startup(function(use)
     -- Status line
     use "feline-nvim/feline.nvim"
 
+    -- Diff
+    use "sindrets/diffview.nvim" 
+
     -- Git
-    use {
-        'tanvirtin/vgit.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim'
-        }
-    }
+    --use "TimUntersberger/neogit"
+    use "NeogitOrg/neogit"
+    use "lewis6991/gitsigns.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

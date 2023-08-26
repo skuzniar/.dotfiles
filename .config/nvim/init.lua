@@ -10,4 +10,7 @@ require "user.telescope"
 --require "user.toggleterm"
 --require "user.nvim-tree"
 require "user.feline"
-require "user.vgit"
+
+require "user.diffview"
+require "user.neogit"
+require "user.gitsigns"
