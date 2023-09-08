@@ -75,6 +75,6 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>sp", ":set spell!<cr>", opts)
 
 -- DiffView
-keymap("n", "<leader>dv", "<cmd>DiffviewOpen<cr>", opts)
+keymap("n", "<leader>dv", "<cmd>DiffviewOpen -uno<cr>", opts)
 keymap("n", "<leader>dc", "<cmd>DiffviewClose<cr>", opts)
 
