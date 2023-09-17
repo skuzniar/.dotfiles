@@ -7,8 +7,6 @@ require "user.snippets"
 require "user.cmp"
 require "user.lspconfig"
 require "user.telescope"
---require "user.toggleterm"
---require "user.nvim-tree"
 require "user.feline"
 
 require "user.diffview"

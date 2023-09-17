@@ -89,6 +89,9 @@ local setup = function()
         flags = {
         }
     }
+    
+    lspconfig['lua_ls'].setup {}
+
 end
 
 setup()
