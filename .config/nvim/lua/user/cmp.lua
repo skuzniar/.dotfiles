@@ -94,18 +94,19 @@ cmp.setup {
       format = function(entry, vim_item)
           -- Kind icons
           vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
-          -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
           vim_item.menu = ({
               nvim_lsp = "[LSP]",
               nvim_lua = "[NVIM_LUA]",
               luasnip = "[Snippet]",
               buffer = "[Buffer]",
               path = "[Path]",
+              cppgen = "[c++gen]",
           })[entry.source.name]
           return vim_item
       end,
   },
   sources = {
+      { name = "cppgen", keyword_length = 4, max_item_count = 3 },
       { name = "nvim_lsp" },
       { name = "nvim_lua" },
       { name = "luasnip" },
@@ -120,7 +121,7 @@ cmp.setup {
       documentation = cmp.config.window.bordered()
   },
   experimental = {
-      ghost_text = false,
+      ghost_text = true,
       native_menu = false,
   },
 }

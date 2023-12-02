@@ -74,7 +74,7 @@ keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Spellcheck
-keymap("n", "<leader>sp", ":set spell!<cr>", opts)
+keymap("n", "<leader>spl", ":set spell!<cr>", opts)
 
 -- DiffView
 keymap("n", "<leader>dv", "<cmd>DiffviewOpen -uno<cr>", opts)

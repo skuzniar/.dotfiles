@@ -97,3 +97,23 @@ telescope.setup {
         -- please take a look at the readme of the extension you want to configure
     },
 }
+
+
+-- My customizations
+local M = {}
+
+function M.grep_notes()
+  local opts = {}
+  opts.hidden = true
+  opts.search_dirs = {
+    "~/notes/",
+  }
+  opts.prompt_prefix = "   "
+  opts.prompt_title = " Grep Notes"
+  opts.path_display = { "smart" }
+  require("telescope.builtin").live_grep(opts)
+end
+
+return M
+
+

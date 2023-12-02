@@ -12,3 +12,5 @@ require "user.feline"
 require "user.diffview"
 require "user.neogit"
 require "user.gitsigns"
+
+require "user.nvim-cppgen"

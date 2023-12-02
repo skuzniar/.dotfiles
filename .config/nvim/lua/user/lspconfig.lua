@@ -87,9 +87,11 @@ local setup = function()
     lspconfig['clangd'].setup {
         on_attach = on_attach,
         flags = {
+        },
+        cmd = {'clangd', '--log=verbose'
         }
     }
-    
+
     lspconfig['lua_ls'].setup {}
 
 end

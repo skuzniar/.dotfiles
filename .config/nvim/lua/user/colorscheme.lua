@@ -1,5 +1,2 @@
 -- Set colorscheme
-vim.cmd('colorscheme codedark')
-
--- Set background color
-vim.opt.background = 'light'
+vim.cmd("colorscheme nightfox")

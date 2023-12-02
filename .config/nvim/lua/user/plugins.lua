@@ -48,11 +48,12 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"    -- Needed by NVim Tree and other plugins
 
     -- Colorscheme
-    use 'tomasiser/vim-code-dark'
+    --use 'tomasiser/vim-code-dark'
     use 'EdenEast/nightfox.nvim'
 
     -- Completion and snippets
     use 'L3MON4D3/LuaSnip'
+
     use {
         'hrsh7th/nvim-cmp',
         requires = {
@@ -94,12 +95,19 @@ return packer.startup(function(use)
     use "feline-nvim/feline.nvim"
 
     -- Diff
-    use "sindrets/diffview.nvim" 
+    use "sindrets/diffview.nvim"
 
     -- Git
     --use "TimUntersberger/neogit"
     use "NeogitOrg/neogit"
     use "lewis6991/gitsigns.nvim"
+
+    -- C++ Gen
+    use {
+        --"/Users/slawomir/dvlp/nvim-cppgen",
+        "skuzniar/nvim-cppgen",
+        requires = "neovim/nvim-lspconfig"
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
