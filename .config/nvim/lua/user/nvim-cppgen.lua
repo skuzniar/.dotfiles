@@ -1,7 +1,11 @@
 require("nvim-cppgen").setup {
     log = {
         plugin      = 'nvim-cppgen',
-        level       = 'info',
+        level       = 'debug',
         use_console = false
+    },
+    oss = {
+        drop_prefix = true,
+        camelize    = true
     }
 }
