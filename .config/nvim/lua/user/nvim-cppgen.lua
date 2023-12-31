@@ -5,7 +5,9 @@ require("nvim-cppgen").setup {
         use_console = false
     },
     oss = {
-        drop_prefix = true,
-        camelize    = true
+        drop_prefix     = true,
+        camelize        = true,
+        equal_sign      = ': ',
+        field_separator = ' '
     }
 }
