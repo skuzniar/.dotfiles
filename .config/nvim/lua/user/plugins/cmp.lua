@@ -114,12 +114,14 @@ return
                         buffer = "[Buffer]",
                         path = "[Path]",
                         cppgen = "[c++gen]",
+                        copilot = "[Copilot]",
                     })[entry.source.name]
                     return vim_item
                 end,
             },
             sources = {
-                { name = "cppgen",  keyword_length = 4, max_item_count = 3 },
+                { name = "cppgen",  keyword_length = 4, max_item_count = 5 },
+                { name = "copilot" },
                 { name = "nvim_lsp" },
                 { name = "nvim_lua" },
                 { name = "luasnip" },
