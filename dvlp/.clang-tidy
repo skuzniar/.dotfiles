@@ -36,6 +36,7 @@ Checks: >
     -modernize-use-trailing-return-type,
     -modernize-avoid-c-arrays,
     performance-*,
+    -performance-avoid-endl,
     clang-analyzer-*
 
 CheckOptions:
