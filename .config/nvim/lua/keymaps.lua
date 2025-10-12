@@ -80,3 +80,18 @@ keymap("n", "<leader>spl", ":set spell!<cr>", opts)
 keymap("n", "<leader>dv", "<cmd>DiffviewOpen -uno<cr>", opts)
 keymap("n", "<leader>dc", "<cmd>DiffviewClose<cr>", opts)
 
+-- LSP Key mappings. See `:help vim.lsp.*` for documentation on any of the below functions
+keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.reove_workspace_folder()<CR>', opts)
+keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+keymap('n', '<space>F', '<cmd>lua vim.lsp.buf.format({async = true})<CR>', opts)
+

@@ -1,3 +1,4 @@
-require "user.options"
-require "user.keymaps"
-require "user.lazycfg"
+require "options"
+require "keymaps"
+require "lspconf"
+require "lazycfg"

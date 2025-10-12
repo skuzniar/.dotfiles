@@ -2,9 +2,6 @@ return
 {
     --"skuzniar/nvim-cppgen",
     dir = "/Users/slawomir/dvlp/cppgen.nvim",
-    dependencies = {
-        "neovim/nvim-lspconfig"
-    },
     opts =
     {
         log = {

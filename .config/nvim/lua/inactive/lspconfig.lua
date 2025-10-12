@@ -93,18 +93,15 @@ return
         end
 
         -- Configure desired language servers
-        local lspconfig = require('lspconfig')
-
-        lspconfig['clangd'].setup {
+        vim.lsp.config('clangd', {
             on_attach = on_attach,
             flags = {
             },
             cmd = {
-                'clangd', '--log=verbose'
+                'clangd', '--log=info'
             }
-        }
-
-        lspconfig['lua_ls'].setup {
+        })
+        vim.lsp.config('lua_ls', {
             settings = {
                 Lua = {
                     runtime = {
@@ -119,6 +116,6 @@ return
                     }
                 }
             }
-        }
+        })
     end
 }
