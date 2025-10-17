@@ -31,6 +31,7 @@ Checks: >
     -hicpp-named-parameter,
     -hicpp-braces-around-statements,
     -hicpp-avoid-c-arrays,
+    -hicpp-no-array-decay,
     misc-*,
     modernize-*,
     -modernize-use-trailing-return-type,
