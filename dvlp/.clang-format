@@ -1,6 +1,6 @@
 BasedOnStyle: Mozilla
 IndentWidth: 4
-ColumnLimit: 120
+ColumnLimit: 160
 UseTab: Never
 Language: Cpp
 Standard: Cpp11
